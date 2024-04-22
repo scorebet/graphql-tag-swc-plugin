@@ -1,14 +1,14 @@
 [package]
-authors = ["Rishabh Chawla <rishabh31121999@gmail.com>"]
+authors = ["theScore"]
 name = "graphql-tag-swc-plugin"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-swc_core = { version = "0.86.*", features = ["ecma_plugin_transform"] }
+swc_core = { version = "0.90.*", features = ["ecma_plugin_transform"] }
 swc_ecma_ast = "0.110.9"
 swc_ecma_visit = "0.96.9"
 graphql_tag = { path = "./transforms/graphql_tag" }
